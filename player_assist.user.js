@@ -2,7 +2,7 @@
 // @name         Attack call for help
 // @namespace    Violentmonkey Scripts
 // @match        https://www.torn.com/loader.php?sid=attack&user2ID=*
-// @version      0.2
+// @version      0.3
 // @author       rDacted[2670953]
 // @description  Adds a 'request for assistance' button to the attack page
 // @grant        GM_xmlhttpRequest
@@ -16,7 +16,7 @@ var apikey = '###PDA-APIKEY###';
 let universalPost = null;
 if (apikey[0] != '#') {
     console.log("Using TornPDA version");
-    universalPost = PDA_httpPost(url, headers, body);
+    universalPost = PDA_httpPost;
 } else {
     console.log("Using GM_xmlhttpRequest version")
     universalPost = function(url, headers, body) {
