@@ -2,7 +2,7 @@
 // @name         Attack call for help
 // @namespace    Violentmonkey Scripts
 // @match        https://www.torn.com/loader.php?sid=attack&user2ID=*
-// @version      0.1
+// @version      0.2
 // @author       rDacted[2670953]
 // @description  Adds a 'request for assistance' button to the attack page
 // @grant        GM_xmlhttpRequest
